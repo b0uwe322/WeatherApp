@@ -26,5 +26,5 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: | 
-          ${{ secrets.DOCKERHUB_USERNAME }}/weather-app:latest
-          ${{ secrets.DOCKERHUB_USERNAME }}/weather-app:${{ github.event.release.tag_name }}
+          ${{ secrets.DOCKER_USERNAME }}/weather-app:latest
+          ${{ secrets.DOCKER_USERNAME }}/weather-app:${{ github.event.release.tag_name }}
