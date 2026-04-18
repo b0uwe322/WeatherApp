@@ -15,11 +15,11 @@ def get_weather():
 
     data = response.json()
     return jsonify({
-        "Город": data["name"],
-        "Температура": data["main"]["temp"],
-        "Описание": data["weather"][0]["description"],
-        "Влажность": data["main"]["humidity"],
-        "Скорость ветра": data.get("wind", {}).get("speed", 0)
+        "City": data["name"],
+        "Temp": data["main"]["temp"],
+        "Description": data["weather"][0]["description"],
+        "Huminity": data["main"]["humidity"],
+        "Wind speed": data.get("wind", {}).get("speed", 0)
     })
 
 if __name__ == '__main__':
